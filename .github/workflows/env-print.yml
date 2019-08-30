@@ -1,0 +1,15 @@
+name: Stupid things
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Echo Stuff
+      run: |
+        echo "Printing out env..."
+        env
+        echo "-----"
+
